@@ -20,27 +20,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Custom Button Back to Portfolio
-st.markdown(
-    """
-    <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
-        <a href="https://www.wolflergf.com" target="_self" style="
-            background-color: #2E86AB;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 10px 16px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
-        ">
-            ⬅️ Back to Portfolio
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
 
 # Custom CSS to enhance the appearance
 def load_custom_css():
