@@ -379,9 +379,9 @@ def main():
     with col1:
         st.markdown("### 📤 Image Upload")
 
-        # Custom upload area
+        # Fixed file uploader with proper label
         uploaded_file = st.file_uploader(
-            "",
+            "Upload MRI Brain Scan Image",
             type=["jpg", "png", "jpeg"],
             help="Supported formats: JPG, PNG, JPEG (max. 200MB)",
             label_visibility="collapsed",
@@ -478,7 +478,7 @@ def main():
 
                 # Button for new analysis
                 if st.button("🔄 New Analysis", use_container_width=True):
-                    st.experimental_rerun()
+                    st.rerun()
 
         else:
             st.markdown(
